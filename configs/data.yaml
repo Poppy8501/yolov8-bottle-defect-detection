@@ -1,0 +1,11 @@
+# Template only. scripts/prepare_dataset.py writes a ready-to-use data.yaml
+# into the output dataset folder with absolute paths.
+path: ../data/yolo_bottle
+train: images/train
+val: images/val
+
+nc: 3
+names:
+  0: broken_large
+  1: broken_small
+  2: contamination

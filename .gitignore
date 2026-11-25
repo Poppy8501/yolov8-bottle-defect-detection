@@ -1,0 +1,36 @@
+# ---- 数据集（约 630 MB，用 scripts/download_bottle.py 重新拉取）----
+data/
+*.tar.xz
+
+# ---- 训练过程产物 ----
+outputs/runs/
+outputs/predictions/
+outputs/color_check/
+
+# ---- 权重：只保留最终模型，其余由训练脚本复现 ----
+outputs/*.pt
+!outputs/best.pt
+
+# ---- 早期评估图（val_plots-2 是最终模型的结果）----
+outputs/evaluation/val_plots/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 其他 ----
+*.log
+*.tmp
